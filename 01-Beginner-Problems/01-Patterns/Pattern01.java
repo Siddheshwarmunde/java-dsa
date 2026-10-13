@@ -13,23 +13,25 @@ Input: n = 4
 Output:
 */
 
+import  java.util.Scanner;
+
 
 public class Pattern01 {
 
   public static void main(String[] args){
-
-    int n = 5;
+ 
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter n: ");
+    int n = sc.nextInt();
 
     for(int i =0; i<n; i++){
       for(int j=0; j<n; j++){
         System.out.print("*");
       }
-      System.out.println("");
+      System.out.println();
     }
-
-
+    sc.close();
   }
-  
 }
 
 /*
@@ -46,3 +48,6 @@ Inner loop (j) = controls columns (stars in each row).
 print("*") = prints on the same line.
 println() = moves to the next row.
 */
+
+
+// I use an outer loop to create n rows. For each row, an inner loop prints n stars, then I move to the next line. This takes O(n^2) time, which is optimal because there are n^2 characters to print.
