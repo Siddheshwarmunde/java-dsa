@@ -1,3 +1,4 @@
+
 /*
 PATTERN 06: Inverted Number Triangle
 

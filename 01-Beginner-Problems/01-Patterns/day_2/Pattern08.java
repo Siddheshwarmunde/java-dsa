@@ -1,3 +1,4 @@
+
 /*
 PATTERN 08: Inverted Star Pyramid
 
